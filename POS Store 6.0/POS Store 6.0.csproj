@@ -167,6 +167,7 @@
     <Compile Include="Suggested_Quantity.xaml.cs">
       <DependentUpon>Suggested_Quantity.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TestClassMadan.cs" />
     <Compile Include="Usercontrol\hideUnhideLableUserControl.xaml.cs">
       <DependentUpon>hideUnhideLableUserControl.xaml</DependentUpon>
     </Compile>
