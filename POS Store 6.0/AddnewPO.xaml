@@ -1,0 +1,32 @@
+﻿<Window x:Class="POS_Store_6._0.AddnewPO"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AddnewPO" Height="450" Width="352" Background="WhiteSmoke" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,22,0,0" TextWrapping="Wrap" Text="Supplier" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,47,0,0" TextWrapping="Wrap" Text="Department" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,73,0,0" TextWrapping="Wrap" Text="Category" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,99,0,0" TextWrapping="Wrap" Text="PO #" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="95,20,0,0" VerticalAlignment="Top" Width="187"/>
+        <ComboBox HorizontalAlignment="Left" Margin="95,45,0,0" VerticalAlignment="Top" Width="187"/>
+        <ComboBox HorizontalAlignment="Left" Margin="95,70,0,0" VerticalAlignment="Top" Width="187"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="95,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187"/>
+        <CheckBox Content="Auto generate purchase order number" HorizontalAlignment="Left" Margin="95,123,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Create Blank purchase order for manual entry" HorizontalAlignment="Left" Margin="10,171,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Generate based on reorder points" HorizontalAlignment="Left" Margin="10,191,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Generate based on items sold between following dates" HorizontalAlignment="Left" Margin="10,211,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="55,241,0,0" TextWrapping="Wrap" Text="Start Date" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="55,268,0,0" TextWrapping="Wrap" Text="End Date" VerticalAlignment="Top"/>
+        <DatePicker HorizontalAlignment="Left" Margin="113,238,0,0" VerticalAlignment="Top"/>
+        <DatePicker HorizontalAlignment="Left" Margin="113,264,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="220,244,0,0" TextWrapping="Wrap" Text="Default previous month" VerticalAlignment="Top" FontSize="10" FontStyle="Italic"/>
+        <TextBlock HorizontalAlignment="Left" Margin="220,269,0,0" TextWrapping="Wrap" Text="Default Todays' Date" VerticalAlignment="Top" FontSize="10" FontStyle="Italic"/>
+        <CheckBox Content=" -On Hand" HorizontalAlignment="Left" Margin="54,319,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="145,319,0,0" TextWrapping="Wrap" Text="( +" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="165,317,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="43"/>
+        <TextBlock HorizontalAlignment="Left" Margin="214,319,0,0" TextWrapping="Wrap" Text="% )" VerticalAlignment="Top"/>
+        <Button Content="Ok" HorizontalAlignment="Left" Height="25" Margin="95,0,0,20" VerticalAlignment="Bottom" Width="85"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Height="25" Margin="185,0,0,20" VerticalAlignment="Bottom" Width="85"/>
+
+    </Grid>
+</Window>

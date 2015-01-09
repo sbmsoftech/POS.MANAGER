@@ -1,0 +1,114 @@
+﻿<UserControl x:Class="POS_Store_6._0.Usercontrol.ExsistingDefaultValue_Item"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Height="948.536" Width="332" FontSize="11">
+    <Grid>
+       
+        <TextBlock HorizontalAlignment="Left" Margin="58,41,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="58,68,0,0" TextWrapping="Wrap" Text="Department" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="58,96,0,0" TextWrapping="Wrap" Text="Category" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="58,123,0,0" TextWrapping="Wrap" Text="Supplier" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="58,153,0,0" TextWrapping="Wrap" Text="Cost" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="58,179,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="60,235,0,0" TextWrapping="Wrap" Text="MSRP" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="60,262,0,0" TextWrapping="Wrap" Text="On Hand" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="60,290,0,0" TextWrapping="Wrap" Text="MIN" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="60,318,0,0" TextWrapping="Wrap" Text="MPQ" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="60,375,0,0" TextWrapping="Wrap" Text="Restock level" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="60,403,0,0" TextWrapping="Wrap" Text="Restock Point" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="60,431,0,0" TextWrapping="Wrap" Text="Tax" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="60,457,0,0" TextWrapping="Wrap" Text="Barcode Type" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBox x:Name="txtDescription" HorizontalAlignment="Left" Height="23" Margin="149,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="2"/>
+        <ComboBox x:Name="cmbDepartment" HorizontalAlignment="Left" Margin="149,66,0,0" VerticalAlignment="Top" Width="150" TabIndex="3"/>
+        <ComboBox x:Name="cmbCategory" HorizontalAlignment="Left" Margin="149,93,0,0" VerticalAlignment="Top" Width="150" TabIndex="4"/>
+        <ComboBox x:Name="cmbSupplier" HorizontalAlignment="Left" Margin="149,120,0,0" VerticalAlignment="Top" Width="150" TabIndex="5"/>
+        <TextBox x:Name="txtCost" HorizontalAlignment="Left" Height="23" Margin="149,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="6"/>
+        <TextBox x:Name="txtPrice" HorizontalAlignment="Left" Height="23" Margin="149,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="7"/>
+        <TextBox x:Name="txtMSRP" HorizontalAlignment="Left" Height="23" Margin="149,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="9"/>
+        <TextBox x:Name="txtOnHand" HorizontalAlignment="Left" Height="23" Margin="149,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="10"/>
+        <TextBox x:Name="txtMIN" HorizontalAlignment="Left" Height="23" Margin="149,287,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="11"/>
+        <TextBox x:Name="txtMPQ" HorizontalAlignment="Left" Height="23" Margin="149,315,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="12"/>
+        <TextBox x:Name="txtRestocklevel" HorizontalAlignment="Left" Height="23" Margin="149,371,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="14"/>
+        <TextBox x:Name="txtRestockPoint" HorizontalAlignment="Left" Height="23" Margin="149,399,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="15"/>
+        <ComboBox x:Name="cmbtax" HorizontalAlignment="Left" Margin="149,427,0,0" VerticalAlignment="Top" Width="150" TabIndex="16"/>
+        <ComboBox x:Name="cmbBarcodeType" HorizontalAlignment="Left" Margin="149,454,0,0" VerticalAlignment="Top" Width="150" TabIndex="17"/>
+        <CheckBox x:Name="ckOnSale" Content="On Sale" HorizontalAlignment="Left" Margin="61,523,0,0" VerticalAlignment="Top" TabIndex="19"/>
+        <TextBox x:Name="txtPer" HorizontalAlignment="Left" Height="23" Margin="220,519,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="41" TabIndex="21"/>
+        <TextBlock HorizontalAlignment="Left" Margin="266,522,0,0" TextWrapping="Wrap" Text="% Off" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <RadioButton x:Name="rdoDate" HorizontalAlignment="Left" Margin="59,557,0,0" VerticalAlignment="Top" TabIndex="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="141,554,0,0" TextWrapping="Wrap" Text="StartDate" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="144,583,0,0" TextWrapping="Wrap" Text="EndDate" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <DatePicker x:Name="dtstartDate" HorizontalAlignment="Left" Margin="195,552,0,0" VerticalAlignment="Top" Width="104" TabIndex="23"/>
+        <DatePicker x:Name="dtEndDate" HorizontalAlignment="Left" Margin="195,581,0,0" VerticalAlignment="Top" Width="104" TabIndex="24"/>
+        <RadioButton x:Name="rdoFollowSchedule" Content="Follow Schedule" HorizontalAlignment="Left" Margin="60,620,0,0" VerticalAlignment="Top" TabIndex="25"/>
+        <ComboBox x:Name="cmbFollowSchedule" HorizontalAlignment="Left" Margin="179,617,0,0" VerticalAlignment="Top" Width="120" TabIndex="26"/>
+        <TextBlock HorizontalAlignment="Left" Margin="60,650,0,0" TextWrapping="Wrap" Text="Picture" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBox x:Name="txtPicture" HorizontalAlignment="Left" Height="23" Margin="149,648,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="103" TabIndex="27"/>
+        <Button x:Name="btnClear"  HorizontalAlignment="Left" Margin="252,648,0,0" VerticalAlignment="Top" Width="23" Height="23" TabIndex="28">
+            <Image Source="/POS Store 6.0;component/Images/CloseBt.png"></Image>
+        </Button>
+        <Button x:Name="btnShow" HorizontalAlignment="Left" Margin="275,648,0,0" VerticalAlignment="Top" Width="23" Height="23" TabIndex="29">
+            <Image Source="/POS Store 6.0;component/Images/Search.png"></Image>
+        </Button>
+        <Border BorderBrush="#FFCDC1C1" BorderThickness="1" HorizontalAlignment="Left" Height="80" Margin="149,676,0,0" VerticalAlignment="Top" Width="150" Background="White">
+            <Image x:Name="image"/>
+        </Border>
+        <CheckBox x:Name="ckWebItem" Content="Website Item ?" HorizontalAlignment="Left" Margin="61,763,0,0" VerticalAlignment="Top" TabIndex="30"/>
+        <CheckBox x:Name="ckPriceatPOS" Content="Price At POS" HorizontalAlignment="Left" Margin="213,763,0,0" VerticalAlignment="Top" TabIndex="31"/>
+        <TextBlock HorizontalAlignment="Left" Margin="61,789,0,0" TextWrapping="Wrap" Text="Ext Description" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBox x:Name="txtExtdescription" HorizontalAlignment="Left" Height="23" Margin="149,786,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="32"/>
+        <TextBlock HorizontalAlignment="Left" Margin="61,816,0,0" TextWrapping="Wrap" Text="Sub Desc 1" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBox x:Name="txtsunDes1" HorizontalAlignment="Left" Height="23" Margin="149,813,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="33"/>
+        <TextBlock HorizontalAlignment="Left" Margin="61,843,0,0" TextWrapping="Wrap" Text="Sub Desc 2" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBox x:Name="txtsubDes2" HorizontalAlignment="Left" Height="23" Margin="149,840,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="34"/>
+        <TextBlock HorizontalAlignment="Left" Margin="61,870,0,0" TextWrapping="Wrap" Text="Sub Desc 3" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBox x:Name="txtsubdes3" HorizontalAlignment="Left" Height="23" Margin="149,867,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="35"/>
+        <TextBlock HorizontalAlignment="Left" Margin="61,895,0,0" TextWrapping="Wrap" Text="Expires" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <DatePicker x:Name="dtExpire" HorizontalAlignment="Left" Margin="149,894,0,0" VerticalAlignment="Top" Width="150" TabIndex="36"/>
+        <TextBlock HorizontalAlignment="Left" Margin="61,925,0,0" TextWrapping="Wrap" Text="Start Blinking " VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBox x:Name="txtStartBlinking_" HorizontalAlignment="Left" Height="23" Margin="149,922,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" TabIndex="37"/>
+        <TextBlock HorizontalAlignment="Left" Margin="196,925,0,0" TextWrapping="Wrap" Text="Days Before expiring" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312" Width="114"/>
+        <TextBlock HorizontalAlignment="Left" Margin="58,13,0,0" TextWrapping="Wrap" Text="Reorder #" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBox x:Name="txtDescription_Copy" HorizontalAlignment="Left" Height="23" Margin="149,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="60,207,0,0" TextWrapping="Wrap" Text="Profit Margin" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBox x:Name="txtMSRP_Copy" HorizontalAlignment="Left" Height="23" Margin="149,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="8"/>
+        <TextBlock HorizontalAlignment="Left" Margin="60,347,0,0" TextWrapping="Wrap" Text="Case Price" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBox x:Name="txtRestocklevel_Copy" HorizontalAlignment="Left" Height="23" Margin="149,343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="13"/>
+        <TextBlock HorizontalAlignment="Left" Margin="60,483,0,0" TextWrapping="Wrap" Text="Alias" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <ComboBox x:Name="cmbBarcodeType_Copy" HorizontalAlignment="Left" Margin="149,480,0,0" VerticalAlignment="Top" Width="150" TabIndex="18"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="149,519,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="66" TabIndex="20"/>
+        <CheckBox x:Name="ckReorder" HorizontalAlignment="Left" Margin="20,15,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckDescription" HorizontalAlignment="Left" Margin="20,41,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckDepartment" HorizontalAlignment="Left" Margin="20,69,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckCategory" HorizontalAlignment="Left" Margin="20,97,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckSupplier" HorizontalAlignment="Left" Margin="20,123,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckCost" HorizontalAlignment="Left" Margin="20,153,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckPrice" HorizontalAlignment="Left" Margin="20,179,0,0" VerticalAlignment="Top"/>
+        <CheckBox HorizontalAlignment="Left" Margin="20,209,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckProfitMargin" HorizontalAlignment="Left" Margin="20,209,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckMSRP" HorizontalAlignment="Left" Margin="20,235,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckOnHand" HorizontalAlignment="Left" Margin="20,263,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckMin" HorizontalAlignment="Left" Margin="20,291,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckMRP" HorizontalAlignment="Left" Margin="20,319,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckCastPrice" HorizontalAlignment="Left" Margin="20,347,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckRestockLevel" HorizontalAlignment="Left" Margin="20,375,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckRestockPoint" HorizontalAlignment="Left" Margin="20,403,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckTax" HorizontalAlignment="Left" Margin="20,431,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckBarcodeType" HorizontalAlignment="Left" Margin="20,457,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckAlise" HorizontalAlignment="Left" Margin="20,485,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckOnsale" HorizontalAlignment="Left" Margin="20,523,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckStartDate" HorizontalAlignment="Left" Margin="20,559,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckFollowSch" HorizontalAlignment="Left" Margin="20,619,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckPicture" HorizontalAlignment="Left" Margin="20,651,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckWebsite" HorizontalAlignment="Left" Margin="20,763,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckExtdescription" HorizontalAlignment="Left" Margin="20,791,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckSubDes1" HorizontalAlignment="Left" Margin="20,817,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckSubDes2" HorizontalAlignment="Left" Margin="20,843,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckSubDes3" HorizontalAlignment="Left" Margin="20,871,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckExpire" HorizontalAlignment="Left" Margin="20,897,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="ckStartblinking" HorizontalAlignment="Left" Margin="20,927,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</UserControl>

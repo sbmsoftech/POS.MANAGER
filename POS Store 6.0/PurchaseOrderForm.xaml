@@ -1,0 +1,21 @@
+﻿<Window x:Class="POS_Store_6._0.PurchaseOrderForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="PurchaseOrderForm" Height="395" Width="774" Foreground="WhiteSmoke" Background="WhiteSmoke" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <DataGrid Margin="10,10,100,10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Status" Width="*"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="PO #" Width="*"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Supplier" Width="*"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Last Update" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnnewOrder" Content="New" HorizontalAlignment="Left" Height="23" Margin="671,10,0,0" VerticalAlignment="Top" Width="85" Click="btnnewOrder_Click"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Height="23" Margin="671,38,0,0" VerticalAlignment="Top" Width="85"/>
+        <Button Content="Edit" HorizontalAlignment="Left" Height="23" Margin="671,66,0,0" VerticalAlignment="Top" Width="85"/>
+        <Button Content="Receive" HorizontalAlignment="Left" Height="23" Margin="671,93,0,0" VerticalAlignment="Top" Width="85"/>
+        <Button Content="Close" HorizontalAlignment="Left" Height="23" Margin="671,331,0,10" VerticalAlignment="Bottom" Width="85"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,18 @@
+﻿<Window x:Class="POS_Store_6._0.Suggested_Quantity"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Suggested_Quantity" Height="287" Width="299" Background="WhiteSmoke" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="20,10,0,0" TextWrapping="Wrap" Text="Suggested Quantity 2" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="44,66,0,0" TextWrapping="Wrap" Text="Quantity sold in last" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="162,64,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="43"/>
+        <TextBlock HorizontalAlignment="Left" Margin="215,66,0,0" TextWrapping="Wrap" Text="days" VerticalAlignment="Top"/>
+        <CheckBox Content=" -On Hand" HorizontalAlignment="Left" Margin="45,113,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="128,113,0,0" TextWrapping="Wrap" Text="( +" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="162,110,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="43"/>
+        <TextBlock HorizontalAlignment="Left" Margin="224,114,0,0" TextWrapping="Wrap" Text=" % )" VerticalAlignment="Top"/>
+        <Button Content="Ok" HorizontalAlignment="Left" Margin="184,188,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="91,188,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>

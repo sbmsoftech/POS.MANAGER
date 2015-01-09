@@ -1,0 +1,36 @@
+﻿<Window x:Class="POS_Store_6._0.ExistingitemrDefaultvalue"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:POS_Store_6._0.Usercontrol"
+        Title="New Item Default Value" Height="726" Width="410.448" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Background="WhiteSmoke">
+    <Grid>
+
+        <ScrollViewer Margin="0,5,0,145">
+            <StackPanel>
+                <Grid Height="122" HorizontalAlignment="Left" VerticalAlignment="Top" Width="auto">
+                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="This feature will save you time by auto filling default values below when a Existing Item is Entered.Great for updating Item or putting items on sale.check auto save feature below to save more time." VerticalAlignment="Top" FontSize="10" Width="364" Height="44"/>
+                    <TextBlock Text="Click Checkbox and select the data to autofill" Margin="0,54,0,51" FontWeight="Bold" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="User will hear a distinct sound If any field field is checked." Margin="15,72,15,0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="13"></TextBlock>
+                    <TextBlock Text="User will hear 2nd distinct sound If Auto Save is checked." Margin="16,90,16,0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="13"></TextBlock>
+                </Grid>
+                <StackPanel Orientation="Horizontal">
+                   
+                    <local:ExsistingDefaultValue_Item x:Name="NewItemDefault"></local:ExsistingDefaultValue_Item>
+                </StackPanel>
+
+            </StackPanel>
+        </ScrollViewer>
+
+        <Border BorderBrush="#FF958B8B" BorderThickness="1" Height="140" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="394" Background="#FFE6E1E1">
+            <Grid>
+                <CheckBox Content="Auto Save New Items with Selection Above" HorizontalAlignment="Left" Margin="56,4,0,0" VerticalAlignment="Top" Foreground="Red" FontWeight="Bold"/>
+                <Button Content="Cancel" HorizontalAlignment="Left" Height="37" Margin="59,91,0,0" VerticalAlignment="Top" Width="89"/>
+                <Button Content="Clear" HorizontalAlignment="Left" Height="37" Margin="157,91,0,0" VerticalAlignment="Top" Width="89"/>
+                <Button Content="Save" HorizontalAlignment="Left" Height="37" Margin="255,91,0,0" VerticalAlignment="Top" Width="89"/>
+                <TextBlock HorizontalAlignment="Left" Margin="56,19,0,0" TextWrapping="Wrap" Text="By selecting this check box existing Items will get saved automatically with default values above so you dont have to press save button. Great Time Saver When updating Item properties such as putting items on sale on the fly." VerticalAlignment="Top"/>
+            </Grid>
+        </Border>
+        <TextBlock HorizontalAlignment="Left" Margin="58,960,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Text="By selecting this check box existing Items will get saved automatically with default values above so you dont have to press save button. Great Time Saver When updatingItem properties such as putting items on sale on the fly." Width="336"/>
+
+    </Grid>
+</Window>
