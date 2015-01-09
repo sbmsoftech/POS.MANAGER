@@ -125,7 +125,7 @@
     <Compile Include="DropPayout.cs">
       <DependentUpon>StoreEntity.tt</DependentUpon>
     </Compile>
-    <Compile Include="DynamicsOnlineAuthorization.cs">
+    <Compile Include="dtproperty.cs">
       <DependentUpon>StoreEntity.tt</DependentUpon>
     </Compile>
     <Compile Include="Exchange.cs">
@@ -260,9 +260,6 @@
       <DependentUpon>StoreEntity.tt</DependentUpon>
     </Compile>
     <Compile Include="RRSMTP_Configuration.cs">
-      <DependentUpon>StoreEntity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="RR_AppKey.cs">
       <DependentUpon>StoreEntity.tt</DependentUpon>
     </Compile>
     <Compile Include="RR_Application.cs">

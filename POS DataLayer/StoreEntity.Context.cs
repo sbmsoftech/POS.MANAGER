@@ -45,6 +45,7 @@ namespace POS_DataLayer
         public virtual DbSet<Dimension> Dimensions { get; set; }
         public virtual DbSet<DimensionAttribute> DimensionAttributes { get; set; }
         public virtual DbSet<DropPayout> DropPayouts { get; set; }
+        public virtual DbSet<dtproperty> dtproperties { get; set; }
         public virtual DbSet<Exchange> Exchanges { get; set; }
         public virtual DbSet<Import> Imports { get; set; }
         public virtual DbSet<ImportEntry> ImportEntries { get; set; }
@@ -83,7 +84,6 @@ namespace POS_DataLayer
         public virtual DbSet<Receipt> Receipts { get; set; }
         public virtual DbSet<Register> Registers { get; set; }
         public virtual DbSet<Report> Reports { get; set; }
-        public virtual DbSet<RR_AppKey> RR_AppKey { get; set; }
         public virtual DbSet<RR_Application> RR_Application { get; set; }
         public virtual DbSet<RR_LoginData> RR_LoginData { get; set; }
         public virtual DbSet<RR_User> RR_User { get; set; }
@@ -129,7 +129,6 @@ namespace POS_DataLayer
         public virtual DbSet<ARHistoryMirror> ARHistoryMirrors { get; set; }
         public virtual DbSet<AuditLog> AuditLogs { get; set; }
         public virtual DbSet<DatabaseMetaData> DatabaseMetaDatas { get; set; }
-        public virtual DbSet<DynamicsOnlineAuthorization> DynamicsOnlineAuthorizations { get; set; }
         public virtual DbSet<GlobalRequestlog> GlobalRequestlogs { get; set; }
         public virtual DbSet<HQMessage> HQMessages { get; set; }
         public virtual DbSet<ItemValueLog> ItemValueLogs { get; set; }

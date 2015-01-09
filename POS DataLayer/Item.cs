@@ -277,7 +277,9 @@ namespace POS_DataLayer
 
         public int TenderID { get { return I_TenderID; } set { I_TenderID = value; } }
 
-
+        [DefaultValue(null)]
+        public Nullable<System.DateTime> Expire_date { get; set; }
+        public Nullable<int> Expire_days { get; set; }
 
 
 

@@ -113,6 +113,8 @@ namespace POS_Store_6._0.Usercontrol
                     userControl.txtsunDes1.Text = dataList[0].SubDescription1;
                     userControl.txtsubDes2.Text = dataList[0].SubDescription2;
                     userControl.txtsubdes3.Text = dataList[0].SubDescription3;
+                    userControl.dtExpire.SelectedDate = dataList[0].Expire_date;
+                    userControl.txtStartBlinking_.Text = dataList[0].Expire_days.ToString();
 
                     txtItemcode.SelectAll();
 

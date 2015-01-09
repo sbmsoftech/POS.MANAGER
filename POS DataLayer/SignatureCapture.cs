@@ -21,6 +21,5 @@ namespace POS_DataLayer
         public int ScaleHeight { get; set; }
         public string Signature { get; set; }
         public byte[] DBTimeStamp { get; set; }
-        public string DeviceName { get; set; }
     }
 }

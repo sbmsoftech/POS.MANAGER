@@ -46,7 +46,7 @@ namespace POS_Store_6._0
                 sup_list.SupplierID = StringToint(ItemsuserControl.cmbSupplier.SelectedValue.ToString());
 
                 Item itm = new Item();
-
+               
 
                 itm.Cost = StringTodecimal(ItemsuserControl.txtCost.Text);
 
@@ -72,7 +72,8 @@ namespace POS_Store_6._0
                 itm.I_MSRP = StringTodecimal(ItemsuserControl.txtMSRP.Text);
                 itm.I_PriceMustBeEntered = Convert.ToBoolean(ItemsuserControl.ckPriceatPOS.IsChecked);
                 itm.I_WebItem = Convert.ToBoolean(ItemsuserControl.ckWebItem.IsChecked);
-
+                itm.Expire_date = ItemsuserControl.dtExpire.SelectedDate;
+                itm.Expire_days = StringToint(ItemsuserControl.txtStartBlinking_.Text);
                 MessageBox.Show(b_layer.addOrUpdateItems(itm,sup_list));
 
                 ItemlookupCodeuserControl.txtItemcode.Focus();

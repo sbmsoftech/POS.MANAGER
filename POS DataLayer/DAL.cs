@@ -177,6 +177,8 @@ namespace POS_DataLayer
                query.SubDescription1 = itm.SubDescription1;
                query.SubDescription2 = itm.SubDescription2;
                query.SubDescription3 = itm.SubDescription3;
+               query.Expire_date = itm.Expire_date;
+               query.Expire_days = itm.Expire_days;
                context.SaveChanges();
                return true;
            }
@@ -212,7 +214,8 @@ namespace POS_DataLayer
                        query.SubDescription1 = itm.SubDescription1;
                        query.SubDescription2 = itm.SubDescription2;
                        query.SubDescription3 = itm.SubDescription3;
-
+                       query.Expire_date = itm.Expire_date;
+                       query.Expire_days = itm.Expire_days;
 
                        var q2 = (from s in context.SupplierLists where s.SupplierID == itm.SupplierID && s.ItemID == query.ID select s).First();
 

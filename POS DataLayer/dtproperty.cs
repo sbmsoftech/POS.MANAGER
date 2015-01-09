@@ -12,17 +12,14 @@ namespace POS_DataLayer
     using System;
     using System.Collections.Generic;
     
-    public partial class RR_AppKey
+    public partial class dtproperty
     {
-        public int ID { get; set; }
-        public string Code { get; set; }
-        public string Name { get; set; }
-        public float Version { get; set; }
-        public int Data1 { get; set; }
-        public int Data2 { get; set; }
-        public int Data3 { get; set; }
-        public Nullable<System.DateTime> KeyDate { get; set; }
-        public Nullable<System.DateTime> ExpDate { get; set; }
-        public string ExtData { get; set; }
+        public int id { get; set; }
+        public Nullable<int> objectid { get; set; }
+        public string property { get; set; }
+        public string value { get; set; }
+        public byte[] lvalue { get; set; }
+        public int version { get; set; }
+        public string uvalue { get; set; }
     }
 }
