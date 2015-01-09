@@ -8,5 +8,9 @@ namespace POS_Store_6._0
 {
     class TestClassMadan
     {
+        public void hello()
+        {
+
+        }
     }
 }
