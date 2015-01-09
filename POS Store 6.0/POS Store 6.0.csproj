@@ -130,7 +130,6 @@
     <Compile Include="ItemWizard.xaml.cs">
       <DependentUpon>ItemWizard.xaml</DependentUpon>
     </Compile>
-    <Compile Include="License.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
