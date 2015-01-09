@@ -15,7 +15,7 @@ namespace POS_DataLayer
     
     public partial class storeEntities : DbContext
     {
-        public storeEntities(String str)
+        public storeEntities(string str)
             : base(str)
         {
         }

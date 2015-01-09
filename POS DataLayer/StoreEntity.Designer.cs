@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'E:\CurrentProject\POS Store 6.0\POS DataLayer\StoreEntity.edmx'. 
+﻿// T4 code generation is enabled for model 'E:\CurrentProject\POS Store 6.0_9-1-15\POS Store 6.0_9-1-15\POS Store 6.0\POS DataLayer\StoreEntity.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
