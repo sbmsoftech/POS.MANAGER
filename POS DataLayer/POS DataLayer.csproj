@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DB619B56-DCF3-4836-BD56-281AC43441D3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POS_DataLayer</RootNamespace>
+    <AssemblyName>POS DataLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounting.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccountingAccount.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccountingTerm.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccountReceivable.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccountReceivableHistory.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccountType.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Alias.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ARHistoryMirror.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AuditLog.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Batch.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarEvent.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cashier.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Check.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigString.cs" />
+    <Compile Include="Configuration.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Currency.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomButton.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomCaption.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DailySale.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL.cs" />
+    <Compile Include="DatabaseMetaData.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Department.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dimension.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DimensionAttribute.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DropPayout.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicsOnlineAuthorization.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Exchange.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalRequestlog.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HQMessage.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Import.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ImportEntry.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryOffline.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryTransferLog.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Item.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ItemClass.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ItemClassComponent.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ItemMessage.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ItemMetadata.cs" />
+    <Compile Include="ItemTax.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ItemValueLog.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Journal.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Kit.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LimitEntry.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Macro.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MacroEvent.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MatrixAttributeDisplayOrder.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Message.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NetDisplayChannel.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NetDisplayURL.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NonTenderTransaction.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OldJournal.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderEntry.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderHistory.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordHistory.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicalInventory.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicalInventoryEntry.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PoleDisplayMessage.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PriceRounding.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseOrder.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderEntry.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderEntryDetail.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QuantityDiscount.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QuoteTenderEntry.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReasonCode.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RecordDeletedLog.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Report.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RRSMTP_Configuration.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RR_AppKey.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RR_Application.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RR_LoginData.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RR_User.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RR_UserPrivileges.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RR_UserRole.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SalesRep.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleSegment.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Serial.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Shipping.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingCarrier.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingService.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingWebPair.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShipTo.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SignatureCapture.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Store.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoreEntity.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StoreEntity.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoreEntity.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoreEntity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StoreEntity.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Substitute.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierList.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Taskpad.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskpadButton.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskpadLayout.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tax.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaxEntry.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaxTotal.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tender.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TenderDenomination.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TenderEntry.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TenderTotal.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TimeCard.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TimeClock.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TimeStampLog.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TouchScreenKeyboard.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TouchScreenKeyboardEntry.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionEntry.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionHold.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionHoldEntry.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserTopic.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VersionHistory.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VisaNetAuthorization.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VisaNetBatch.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Voucher.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VoucherEntry.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VoucherFormatNumber.cs">
+      <DependentUpon>StoreEntity.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="StoreEntity.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>StoreEntity.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="StoreEntity.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>StoreEntity.edmx</DependentUpon>
+      <LastGenOutput>StoreEntity.Context.cs</LastGenOutput>
+    </None>
+    <None Include="StoreEntity.edmx.diagram">
+      <DependentUpon>StoreEntity.edmx</DependentUpon>
+    </None>
+    <None Include="StoreEntity.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>StoreEntity.edmx</DependentUpon>
+      <LastGenOutput>StoreEntity.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

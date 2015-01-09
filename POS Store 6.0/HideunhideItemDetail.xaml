@@ -1,0 +1,35 @@
+﻿<Window x:Class="POS_Store_6._0.HideunhideItemDetail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:POS_Store_6._0.Usercontrol"
+        Title="New Item Default Value" Height="615" Width="368.448" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Background="WhiteSmoke">
+    <Grid>
+
+        <ScrollViewer Margin="0,5,0,58">
+            <StackPanel>
+                <Grid Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Width="384">
+                    <TextBlock Text="Select to Hide / Unhide Item details" Margin="65,4,65,0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Height="22"></TextBlock>
+                </Grid>
+                <StackPanel Orientation="Horizontal">
+
+                    <StackPanel>
+
+                        <local:ExsistingDefaultValue_Item></local:ExsistingDefaultValue_Item>
+                        <local:hideUnhideLableUserControl Margin="10,0,0,0"></local:hideUnhideLableUserControl>
+                    </StackPanel>
+
+                </StackPanel>
+
+            </StackPanel>
+        </ScrollViewer>
+
+        <Border BorderBrush="#FF958B8B" BorderThickness="1" Height="58" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="352" Background="#FFE6E1E1">
+            <Grid>
+                <Button Content="Cancel" HorizontalAlignment="Left" Height="36" Margin="10,10,0,0" VerticalAlignment="Top" Width="105"/>
+                <Button Content="Clear" HorizontalAlignment="Left" Height="36" Margin="123,10,0,0" VerticalAlignment="Top" Width="105"/>
+                <Button Content="Save" HorizontalAlignment="Left" Height="36" Margin="235,10,0,0" VerticalAlignment="Top" Width="105"/>
+            </Grid>
+        </Border>
+
+    </Grid>
+</Window>

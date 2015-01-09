@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS Store 6.0", "POS Store 6.0\POS Store 6.0.csproj", "{7A158732-D388-4D05-B9D2-BEABD7668B16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS DataLayer", "POS DataLayer\POS DataLayer.csproj", "{DB619B56-DCF3-4836-BD56-281AC43441D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS B_Layer", "POS B_Layer\POS B_Layer.csproj", "{4A2DB2C4-EA06-432B-8A23-53BCD985D910}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A158732-D388-4D05-B9D2-BEABD7668B16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A158732-D388-4D05-B9D2-BEABD7668B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A158732-D388-4D05-B9D2-BEABD7668B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A158732-D388-4D05-B9D2-BEABD7668B16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB619B56-DCF3-4836-BD56-281AC43441D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB619B56-DCF3-4836-BD56-281AC43441D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB619B56-DCF3-4836-BD56-281AC43441D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB619B56-DCF3-4836-BD56-281AC43441D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A2DB2C4-EA06-432B-8A23-53BCD985D910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A2DB2C4-EA06-432B-8A23-53BCD985D910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A2DB2C4-EA06-432B-8A23-53BCD985D910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A2DB2C4-EA06-432B-8A23-53BCD985D910}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

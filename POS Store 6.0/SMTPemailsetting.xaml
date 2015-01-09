@@ -1,0 +1,40 @@
+﻿<Window x:Class="POS_Store_6._0.SMTPemailsetting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SMTPemailsetting" Height="482" Width="600" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="WhiteSmoke">
+    <Grid>
+        <TabControl Margin="0,0,0,61">
+            <TabItem Header="Email Setting">
+                <Grid>
+                    <TextBlock HorizontalAlignment="Left" Margin="19,38,0,0" TextWrapping="Wrap" Text="Server Address :" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="31,69,0,0" TextWrapping="Wrap" Text="Port number :" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="41,96,0,0" TextWrapping="Wrap" Text="User name :" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="48,124,0,0" TextWrapping="Wrap" Text="Password :" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="56,153,0,0" TextWrapping="Wrap" Text="Domain :" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="109,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="341"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="109,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="109,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225"/>
+                    <PasswordBox HorizontalAlignment="Left" Margin="109,121,0,0" VerticalAlignment="Top" Width="225" Height="23"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="109,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225"/>
+                    <RadioButton Content="Require secure connection" HorizontalAlignment="Left" Margin="109,177,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.494,-0.133"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="14,219,0,0" TextWrapping="Wrap" Text="Default email id :" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="109,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="341"/>
+                    <Button Content="Sent  test Email" HorizontalAlignment="Left" Margin="109,286,0,0" VerticalAlignment="Top" Width="121"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Email Message">
+                <Grid>
+                    <TextBlock HorizontalAlignment="Left" Margin="22,22,0,0" TextWrapping="Wrap" Text="Email Subject :" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="112,21,0,0" VerticalAlignment="Top" Width="409"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="34,66,0,0" TextWrapping="Wrap" Text="Email Body :" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Height="133" Margin="112,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="409"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,206,0,0" TextWrapping="Wrap" Text="Email Signature :" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Height="116" Margin="113,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="408"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="402,409,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Ok" HorizontalAlignment="Left" Margin="497,409,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>

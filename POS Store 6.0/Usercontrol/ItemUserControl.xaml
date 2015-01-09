@@ -1,0 +1,96 @@
+﻿<UserControl x:Class="POS_Store_6._0.Usercontrol.ItemUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+            xmlns:local="clr-namespace:Microsoft.Win32;assembly=mscorlib"
+             mc:Ignorable="d" Height="958.775" Width="284" FontSize="11">
+
+    <Grid Name="Root">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="299*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="10,41,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,68,0,0" TextWrapping="Wrap" Text="Department" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,96,0,0" TextWrapping="Wrap" Text="Category" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,123,0,0" TextWrapping="Wrap" Text="Supplier" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,153,0,0" TextWrapping="Wrap" Text="Cost" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,179,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,235,0,0" TextWrapping="Wrap" Text="MSRP" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,262,0,0" TextWrapping="Wrap" Text="On Hand" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,290,0,0" TextWrapping="Wrap" Text="MIN" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,318,0,0" TextWrapping="Wrap" Text="MPQ" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,375,0,0" TextWrapping="Wrap" Text="Restock level" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,403,0,0" TextWrapping="Wrap" Text="Restock Point" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,431,0,0" TextWrapping="Wrap" Text="Tax" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,457,0,0" TextWrapping="Wrap" Text="Barcode Type" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBox x:Name="txtDescription" HorizontalAlignment="Left" Height="23" Margin="101,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="2" GotFocus="Method_GotFocus"/>
+        <ComboBox x:Name="cmbDepartment" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="101,66,0,0" VerticalAlignment="Top" Width="150" TabIndex="3" SelectionChanged="cmbDepartment_SelectionChanged" IsEditable="True" IsReadOnly="True"/>
+        <ComboBox x:Name="cmbCategory" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="101,93,0,0" VerticalAlignment="Top" Width="150" TabIndex="4" IsEditable="True" IsReadOnly="True"/>
+        <ComboBox x:Name="cmbSupplier" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="101,120,0,0" VerticalAlignment="Top" Width="150" TabIndex="5" IsEditable="True" IsReadOnly="True">
+
+        </ComboBox>
+        <TextBox x:Name="txtCost" HorizontalAlignment="Left" Height="23" Margin="101,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="6" LostFocus="Mathod_LostFocus" GotFocus="Method_GotFocus"/>
+        <TextBox x:Name="txtPrice" HorizontalAlignment="Left" Height="23" Margin="101,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="7" LostFocus="Mathod_LostFocus" GotFocus="Method_GotFocus"/>
+        <TextBox x:Name="txtMSRP" HorizontalAlignment="Left" Height="23" Margin="101,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="9" LostFocus="Mathod_LostFocus" GotFocus="Method_GotFocus"/>
+        <TextBox x:Name="txtOnHand" HorizontalAlignment="Left" Height="23" Margin="101,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="10" GotFocus="Method_GotFocus"/>
+        <TextBox x:Name="txtMIN" HorizontalAlignment="Left" Height="23" Margin="101,287,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="11" GotFocus="Method_GotFocus"/>
+        <TextBox x:Name="txtMPQ" HorizontalAlignment="Left" Height="23" Margin="101,315,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="12" LostFocus="Mathod_LostFocus" GotFocus="Method_GotFocus"/>
+        <TextBox x:Name="txtRestocklevel" HorizontalAlignment="Left" Height="23" Margin="101,371,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="14" GotFocus="Method_GotFocus"/>
+        <TextBox x:Name="txtRestockPoint" HorizontalAlignment="Left" Height="23" Margin="101,399,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="15" GotFocus="Method_GotFocus"/>
+        <ComboBox x:Name="cmbtax" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="101,427,0,0" VerticalAlignment="Top" Width="150" TabIndex="16" IsEditable="True" IsReadOnly="True"/>
+        <ComboBox x:Name="cmbBarcodeType" HorizontalAlignment="Left" Margin="101,454,0,0" VerticalAlignment="Top" Width="150" TabIndex="17" IsEditable="True" IsReadOnly="True">
+            <ComboBoxItem Content="A"/>
+        </ComboBox>
+        <CheckBox x:Name="ckOnSale" Content="On Sale" HorizontalAlignment="Left" Margin="13,523,0,0" VerticalAlignment="Top" TabIndex="19"/>
+        <TextBox x:Name="txtOnsalePer" HorizontalAlignment="Left" Height="23" Margin="172,519,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="41" TabIndex="21" GotFocus="Method_GotFocus" LostFocus="OnsalePrice_LostFocus"/>
+        <TextBlock HorizontalAlignment="Left" Margin="218,522,0,0" TextWrapping="Wrap" Text="% Off" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <RadioButton x:Name="rdoDate" HorizontalAlignment="Left" Margin="11,557,0,0" VerticalAlignment="Top" TabIndex="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="93,554,0,0" TextWrapping="Wrap" Text="StartDate" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="96,583,0,0" TextWrapping="Wrap" Text="EndDate" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <DatePicker  x:Name="dtstartDate" HorizontalAlignment="Left" Margin="147,552,0,0" VerticalAlignment="Top" Width="104" TabIndex="23"/>
+        <DatePicker x:Name="dtEndDate" HorizontalAlignment="Left" Margin="147,581,0,0" VerticalAlignment="Top" Width="104" TabIndex="24"/>
+        <RadioButton x:Name="rdoFollowSchedule" Content="Follow Schedule" HorizontalAlignment="Left" Margin="12,620,0,0" VerticalAlignment="Top" TabIndex="25"/>
+        <ComboBox x:Name="cmbFollowSchedule" HorizontalAlignment="Left" Margin="131,617,0,0" VerticalAlignment="Top" Width="120" TabIndex="26" IsEditable="True" IsReadOnly="True"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,650,0,0" TextWrapping="Wrap" Text="Picture" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBox x:Name="txtPicture" HorizontalAlignment="Left" Height="23" Margin="101,648,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="103" TabIndex="27"/>
+        <Button x:Name="btnClear"  HorizontalAlignment="Left" Margin="204,648,0,0" VerticalAlignment="Top" Width="23" Height="23" TabIndex="28">
+            <Image Source="/POS Store 6.0;component/Images/CloseBt.png"></Image>
+        </Button>
+        <Button x:Name="btnShow" HorizontalAlignment="Left" Margin="227,648,0,0" VerticalAlignment="Top" Width="23" Height="23" TabIndex="29">
+            <Image Source="/POS Store 6.0;component/Images/Search.png"></Image>
+        </Button>
+        <Border BorderBrush="#FFCDC1C1" BorderThickness="1" HorizontalAlignment="Left" Height="80" Margin="101,676,0,0" VerticalAlignment="Top" Width="150" Background="White">
+            <Image x:Name="image"/>
+        </Border>
+        <CheckBox x:Name="ckWebItem" Content="Website Item ?" HorizontalAlignment="Left" Margin="13,763,0,0" VerticalAlignment="Top" TabIndex="30"/>
+        <CheckBox x:Name="ckPriceatPOS" Content="Price At POS" HorizontalAlignment="Left" Margin="165,763,0,0" VerticalAlignment="Top" TabIndex="31"/>
+        <TextBlock HorizontalAlignment="Left" Margin="13,789,0,0" TextWrapping="Wrap" Text="Ext Description" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBox x:Name="txtExtdescription" HorizontalAlignment="Left" Height="23" Margin="101,786,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="32" GotFocus="Method_GotFocus"/>
+        <TextBlock HorizontalAlignment="Left" Margin="13,816,0,0" TextWrapping="Wrap" Text="Sub Desc 1" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBox x:Name="txtsunDes1" HorizontalAlignment="Left" Height="23" Margin="101,813,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="33" GotFocus="Method_GotFocus"/>
+        <TextBlock HorizontalAlignment="Left" Margin="13,843,0,0" TextWrapping="Wrap" Text="Sub Desc 2" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBox x:Name="txtsubDes2" HorizontalAlignment="Left" Height="23" Margin="101,840,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="34" GotFocus="Method_GotFocus"/>
+        <TextBlock HorizontalAlignment="Left" Margin="13,870,0,0" TextWrapping="Wrap" Text="Sub Desc 3" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBox x:Name="txtsubdes3" HorizontalAlignment="Left" Height="23" Margin="101,867,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="35" GotFocus="Method_GotFocus"/>
+        <TextBlock HorizontalAlignment="Left" Margin="13,895,0,0" TextWrapping="Wrap" Text="Expires" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <DatePicker x:Name="dtExpire" HorizontalAlignment="Left" Margin="101,894,0,0" VerticalAlignment="Top" Width="150" TabIndex="36"/>
+        <TextBlock HorizontalAlignment="Left" Margin="13,925,0,0" TextWrapping="Wrap" Text="Start Blinking " VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBox x:Name="txtStartBlinking_" HorizontalAlignment="Left" Height="23" Margin="101,922,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" TabIndex="37" GotFocus="Method_GotFocus"/>
+        <TextBlock HorizontalAlignment="Left" Margin="148,925,0,0" TextWrapping="Wrap" Text="Days Before expiring" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312" Width="114"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,13,0,0" TextWrapping="Wrap" Text="Reorder #" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBox x:Name="txtReorder" HorizontalAlignment="Left" Height="23" Margin="101,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="1" GotFocus="Method_GotFocus"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,207,0,0" TextWrapping="Wrap" Text="Profit Margin" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBox x:Name="txtProfitMargin" HorizontalAlignment="Left" Height="23" Margin="101,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="8" LostFocus="Mathod_LostFocus" GotFocus="Method_GotFocus">
+
+        </TextBox>
+        <TextBlock HorizontalAlignment="Left" Margin="12,347,0,0" TextWrapping="Wrap" Text="Case Price" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <TextBox x:Name="txtCasePrice" HorizontalAlignment="Left" Height="23" Margin="101,343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TabIndex="13" LostFocus="Mathod_LostFocus" GotFocus="Method_GotFocus"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,483,0,0" TextWrapping="Wrap" Text="Alias" VerticalAlignment="Top" RenderTransformOrigin="0.1,-1.312"/>
+        <ComboBox x:Name="cmbAlias" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="101,480,0,0" VerticalAlignment="Top" Width="150" TabIndex="18" IsEditable="True" IsReadOnly="True"/>
+        <TextBox x:Name="txtOnsalePrice" HorizontalAlignment="Left" Height="23" Margin="101,519,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" TabIndex="20" GotFocus="Method_GotFocus" LostFocus="OnsalePrice_LostFocus"/>
+
+    </Grid>
+</UserControl>
