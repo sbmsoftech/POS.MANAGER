@@ -120,6 +120,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Class1.cs" />
     <Compile Include="DatabaseSetting.xaml.cs">
       <DependentUpon>DatabaseSetting.xaml</DependentUpon>
     </Compile>
